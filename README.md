@@ -1,5 +1,5 @@
 # slack-integration-kudos
-Simple API server for slack to post note to #kudos channel when a message receives thumbsup:all reaction.
+Simple API server for slack to post note to #kudos channel when a message receives thumbsup_all reaction.
 
 #### Local machine development:
 First download and install ngrok for secure tunnelling between localhost and web accessible endpoint. Tutorial found here: https://api.slack.com/tutorials/tunneling-with-ngrok
@@ -21,5 +21,5 @@ node server.js
 
 ### Under the Slack hood
 - Slack app is subscribed to reactions:added event in the workspace and sends an event object to our API server whenever a reaction is added.
-- API server checks to see if the event reaction is a ```thumbsup:all``` reaction. If so, server will make Web API calls to retrieve the names of the reacted user and reacted message poster, and cache the results for future.
+- API server checks to see if the event reaction is a ```thumbsup_all``` reaction. If so, server will make Web API calls to retrieve the names of the reacted user and reacted message poster, and cache the results for future.
 - API server then sends a note to #kudos channel using the incoming webhook URL detailing who gave whom kudos!
