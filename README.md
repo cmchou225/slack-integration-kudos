@@ -6,7 +6,7 @@ First download and install ngrok for secure tunnelling between localhost and web
 
 Tutorial found here: https://api.slack.com/tutorials/tunneling-with-ngrok
 
-###usage
+### Usage
 - Create a new app on slack for your workspace with incoming webhooks and Events API enabled: https://api.slack.com/apps?new_app=1
 
 - Create a new .env file in root directory of cloned repo. Follow the format of example.env file using the corresponding ids, token, secret and incoming webhook url provided by Slack app. 
